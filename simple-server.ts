@@ -5,7 +5,7 @@ const typeDefs = gql`
     users: [String!]!
   }
 
-  type Mutations {
+  type Mutation {
     createUser(name: String!): String!
   }
 `;
@@ -20,7 +20,8 @@ const server = new ApolloServer({
         return users;
       },
     },
-    Mutations: {
+
+    Mutation: {
       createUser: (parent, args, ctx) => {
         users.push(args.name);
 
