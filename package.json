@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:simple": "tsnd --respawn --transpile-only simple-server.ts"
+    "dev:simple": "tsnd --respawn --transpile-only simple-server.ts",
+    "dev": "tsnd --respawn --transpile-only src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "dependencies": {
     "apollo-server": "^3.10.2",
-    "graphql": "^16.6.0"
+    "graphql": "^15.8.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
   }
 }
